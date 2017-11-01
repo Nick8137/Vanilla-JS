@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/Restaurant-Wallpapers-19.jpg);
+  background-size: cover; }
+  body .wrapper {
+    width: auto;
+    padding: 15px;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95); }
+    body .wrapper h2 {
+      font-size: 1.3em;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+    body .wrapper .plates {
+      list-style: none;
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 15px; }
+      body .wrapper .plates li {
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        body .wrapper .plates li input {
+          margin-right: 7px; }
+        body .wrapper .plates li label,
+        body .wrapper .plates li input {
+          cursor: pointer;
+          vertical-align: middle; }
+    body .wrapper .add-items input {
+      padding: 7px 5px;
+      font-weight: bold;
+      font-size: 0.75em; }
+      body .wrapper .add-items input[type="submit"] {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+      body .wrapper .add-items input[type="text"] {
+        width: 138px;
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+    body .wrapper .more-options {
+      margin-top: 7px; }
+      body .wrapper .more-options input {
+        padding: 7px 5px;
+        font-weight: bold;
+        font-size: 0.75em;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */

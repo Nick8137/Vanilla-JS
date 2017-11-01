@@ -1,0 +1,108 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 350px;
+	background-image: url(img/darth_vader_armor_star_wars_film_hat_snow_93645_1366x768.jpg);
+	background-size: cover;
+}
+
+.logo h1 {
+	color: #fff;
+	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+	font-family: sans-serif;
+	font-size: 3.4em;
+}
+
+#main {
+	width: 100%;
+	z-index: 1;
+}
+
+.fixed-nav #main {
+	position: fixed;
+	top: 0;
+	box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#main ul {
+	display: flex;;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+}
+
+#main ul li {
+	padding: 25px 0;
+	list-style: none;
+}
+
+nav a {
+	padding: inherit;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-decoration: none;
+	background: #000;
+	transition: all 0.2s ease-out 0s;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 1.1em;
+	color: #fff;
+}
+
+#main ul li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.nav-logo {
+	max-width: 0;
+	overflow: hidden;
+	transition: all 0.5s ease-out 0s;
+}
+
+.nav-logo a {
+	background-color: #3F009D;
+}
+
+.fixed-nav .nav-logo {
+	max-width: 500px;
+}
+
+.content {
+	padding: 50px 3%;
+	text-align: justify;
+	margin: 100px 10%;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+	transform: scale(0.98);
+	transition: all 0.5s ease-out 0s;
+	z-index: -1;
+}
+
+.fixed-nav .content {
+	transform: scale(1);
+}
+
+.content p {
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
